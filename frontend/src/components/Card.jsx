@@ -8,7 +8,7 @@ function Card({ item }) {
                     <figure>
                         <img
                             src={item.image}
-                            alt="Shoes"
+                            alt="Books"
                         />
                     </figure>
                     <div className="card-body">

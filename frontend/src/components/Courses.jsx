@@ -4,7 +4,6 @@ import Card from './Card';
 import { Link } from 'react-router-dom';
 
 const Courses = () => {
-    console.log(list);
     return (
         <>
             <div className='max-w-screen-2xl container mx-auto md:px-20 px-4'>
