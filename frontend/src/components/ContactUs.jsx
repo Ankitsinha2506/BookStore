@@ -6,7 +6,7 @@ const ContactUs = () => {
     return (
         <>
             <Navbar />
-            <div>
+            <div className='min-h-screen'>
                 <Contact />
             </div>
         </>

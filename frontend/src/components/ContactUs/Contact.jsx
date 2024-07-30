@@ -16,9 +16,9 @@ const Contact = () => {
                     <div className="">
                         <form onSubmit={handleSubmit(onSubmit)} method="dialog">
                             {/* Close button */}
-                            <Link to='/' className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                            {/* <Link to='/' className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                                 ✕
-                            </Link>
+                            </Link> */}
 
                             <h1 className="font-bold text-lg">Contact Us</h1>
 
