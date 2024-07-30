@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
+import Login from './Login';
 
 const Navbar = () => {
     const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light")
@@ -119,7 +120,10 @@ const Navbar = () => {
 
                     </label>
                     <div>
-                        <a className="bg-black text-white px-2 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer">Login</a>
+                        <a className="bg-black text-white px-2 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer"
+                        onClick={()=> document.getElementById("my_modal_3").showModal()}
+                        >Login</a>
+                        <Login />
                     </div>
                 </div>
             </div>
