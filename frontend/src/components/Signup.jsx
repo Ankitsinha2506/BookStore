@@ -13,9 +13,9 @@ function Signup() {
     const onSubmit = (data) => console.log(data);
     return (
         <>
-            <div className='flex h-screen items-center justify-center '>
+            <div className='flex h-screen items-center justify-center  '>
                 <div className="w-[600px]">
-                    <div className="modal-box">
+                    <div className="modal-box dark:bg-slate-900 dark:text-white">
                         <form onSubmit={handleSubmit(onSubmit)} method="dialog">
                             {/* if there is a button in form, it will close the modal */}
                             <Link to='/' className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
@@ -30,10 +30,10 @@ function Signup() {
                                 <br />
                                 <input type="text"
                                     placeholder='Enter Your Full Name'
-                                    className='w-80 px-3 py-1 border rounded-md outline-none' 
+                                    className='w-80 px-3 py-1 border rounded-md outline-none'
                                     {...register("name", { required: "* Name is required" })}
-                                    />
-                                    {errors.text && <p className="text-red-500">{errors.text.message}</p>}
+                                />
+                                {errors.text && <p className="text-red-500">{errors.text.message}</p>}
                             </div>
 
                             {/* Email */}
@@ -42,10 +42,10 @@ function Signup() {
                                 <br />
                                 <input type="email"
                                     placeholder='Enter Your Email'
-                                    className='w-80 px-3 py-1 border rounded-md outline-none' 
+                                    className='w-80 px-3 py-1 border rounded-md outline-none'
                                     {...register("email", { required: "* Email is required" })}
-                                    />
-                                    {errors.email && <p className="text-red-500">{errors.email.message}</p>}
+                                />
+                                {errors.email && <p className="text-red-500">{errors.email.message}</p>}
                             </div>
 
                             {/* Password */}
@@ -54,10 +54,10 @@ function Signup() {
                                 <br />
                                 <input type="password"
                                     placeholder='Enter your password'
-                                    className='w-80 px-3 py-1 border rounded-md outline-none' 
+                                    className='w-80 px-3 py-1 border rounded-md outline-none'
                                     {...register("password", { required: "* Password is required" })}
-                                    />
-                                    {errors.password && <p className="text-red-500">{errors.password.message}</p>}
+                                />
+                                {errors.password && <p className="text-red-500">{errors.password.message}</p>}
                             </div>
 
                             {/* BUtton */}

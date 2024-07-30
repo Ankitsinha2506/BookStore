@@ -14,7 +14,7 @@ function Login() {
     return (
         <div>
             <dialog id="my_modal_3" className="modal ">
-                <div className="modal-box">
+                <div className="modal-box dark:bg-slate-900 dark:text-white">
                     <form onSubmit={handleSubmit(onSubmit)} method="dialog">
                         <Link to='/' className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                             ✕
@@ -42,7 +42,7 @@ function Login() {
                                 type="password"
                                 placeholder='Enter your password'
                                 className='w-80 px-3 py-1 border rounded-md outline-none'
-                                {...register("password", { required: "* Password is required" })}
+                                {...register("password", { required: "*Password is required" })}
                             />
                             {errors.password && <p className="text-red-500">{errors.password.message}</p>}
                         </div>
@@ -59,6 +59,7 @@ function Login() {
                                 </Link>
                             </p>
                         </div>
+                        
                     </form>
                 </div>
             </dialog>
